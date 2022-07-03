@@ -609,8 +609,12 @@ int sscanf(const char *, const char *, ...);
 #define MG_ENABLE_OPENSSL 0
 #endif
 
+#ifndef MG_ENABLE_TLSE
+#define MB_ENABLE_TLSE  1
+#endif
+
 #ifndef MG_ENABLE_CUSTOM_TLS
-#define MG_ENABLE_CUSTOM_TLS 0
+#define MG_ENABLE_CUSTOM_TLS 1
 #endif
 
 #ifndef MG_ENABLE_SSI
